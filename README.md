@@ -13,4 +13,4 @@ python password_checker.py [password] [wordlist_file]
 
 [password] being the password you are checking. 
 
-[wordlist file] being the password list you are using.
+[wordlist_file] being the password list you are using.
