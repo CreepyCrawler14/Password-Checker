@@ -9,8 +9,6 @@ git clone https://github.com/CreepyCrawler14/Password-Checker.git
 
 cd Password-Checker
 
-python password_checker.py [password] [wordlist_file]
+python app.py
 
-[password] being the password you are checking. 
-
-[wordlist_file] being the password list you are using.
+Then in your web browser go to http://127.0.0.1:5000
