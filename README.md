@@ -7,6 +7,10 @@ Depending on how powerful your device is, the password checker tool can run thro
 # How To Run
 git clone https://github.com/CreepyCrawler14/Password-Checker.git
 
+sudo apt install pip
+
+pip install flask
+
 cd Password-Checker
 
 python app.py
