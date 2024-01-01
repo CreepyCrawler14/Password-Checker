@@ -11,7 +11,7 @@ git clone https://github.com/CreepyCrawler14/Password-Checker.git
 
 apt install pip -y
 
-pip install flask -y
+pip install flask
 
 cd Password-Checker
 
