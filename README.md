@@ -4,7 +4,9 @@ To use this tool you will need to download a password list from a different sour
 This tool does not come with a built in password list.
 Depending on how powerful your device is, the password checker tool can run through most password lists in under 10 seconds.
 
-# How To Run 
+# How To Run
+apt update && upgrade
+
 apt install git -y
 
 git clone https://github.com/CreepyCrawler14/Password-Checker.git
