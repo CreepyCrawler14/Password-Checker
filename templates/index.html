@@ -1,0 +1,54 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Password Checker</h1>
+    
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password" placeholder="Password">
+    <br>
+    <label for="wordlist">Wordlist File:</label>
+    <input type="text" id="wordlist" placeholder="Wordlist File">
+    <br>
+    <button onclick="checkPassword()">Check Password</button>
+    
+    <div id="result"></div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var wordlist = document.getElementById("wordlist").value;
+
+            if (!password || !wordlist) {
+                alert("Please enter both password and wordlist file.");
+                return;
+            }
+
+            fetch(`/check_password?password=${password}&wordlist=${wordlist}`)
+                .then(response => response.text())
+                .then(result => {
+                    document.getElementById("result").innerHTML = result;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById("result").innerHTML = "An error occurred.";
+                });
+        }
+    </script>
+</body>
+</html>
