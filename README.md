@@ -5,13 +5,13 @@ This tool does not come with a built in password list.
 Depending on how powerful your device is, the password checker tool can run through most password lists in under 10 seconds.
 
 # How To Run
-sudo apt install git
+sudo apt install git -y
 
 git clone https://github.com/CreepyCrawler14/Password-Checker.git
 
-sudo apt install pip
+sudo apt install pip -y
 
-pip install flask
+pip install flask -y
 
 cd Password-Checker
 
