@@ -3,7 +3,7 @@ This tool was created so people can quickly check if a password exists within a 
 To use this tool you will need to download a password list from a different source.
 This tool does not come with a built in password list.
 Depending on how powerful your device is, the password checker tool can run through most password lists in under 10 seconds.
-
+Run all of the commands below in a linux terminal adding sudo permissions where required.
 # How To Run
 apt update && upgrade
 
